@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Allegheny County Emergency Services</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/skin-blue.min.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+  <!-- Main Header -->
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>ACES</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Alleghney County</b></span>
+    </a>
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- The user image in the navbar-->
+              <img src="https://i2.wp.com/hoopieworld.com/wp2/wp-content/uploads/2014/01/allegheny-county-911.gif" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs">ACES</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="user-header">
+                <img src="https://i2.wp.com/hoopieworld.com/wp2/wp-content/uploads/2014/01/allegheny-county-911.gif" class="img-circle" alt="User Image">
+                
+                  Allegheny County Emergency Services
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="https://i2.wp.com/hoopieworld.com/wp2/wp-content/uploads/2014/01/allegheny-county-911.gif" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          ACES</p>
+        </div>
+      </div>
+      <!-- search form -->
+      <!-- <form action="search" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form> -->
+      <!-- /.search form -->
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        <li class="header">Form Options</li>
+        <!-- Optionally, you can add icons to the links -->
+        <li class="active"><a href="search"><i class="fa fa-link"></i> <span>Form Lookup</span></a></li>
+        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Link in level 2</a></li>
+            <li><a href="#">Link in level 2</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+    </section>
+    <!-- Main content -->
+    <section class="content">
+    <form action='/commit_form'>
+    <h3>General Information</h3>
+    Name: <input type ="text" name ="name"><br>
+    Address: <input type ="text" name ="street_address"><br>
+    PDA Date: <input type ="date" name ="pda_date"><br>
+    Date: <input type ="date" name ="date"><br>
+    Date of Damage: <input type ="date" name ="date_damaged"><br>
+    County: <input type ="text" name ="county"><br>
+    Municipality: <input type ="text" name ="municipality_name"><br>
+    City: <input type ="text" name ="city"><br>
+    Code: <input type ="text" name ="municipality_code"><br>
+    Zip Code: <input type ="number" name ="zip_code"><br>
+    Longitude: <input type ="number" name ="longitude"><br>
+    Latitude: <input type ="number" name ="latitude"><br>
+    Type of Disaster: <input type ="text" name ="incident_type"><br>
+    Basement Water Height(inches): <input type="number" name="basement_water"><br>
+    First Floor Water Height(inches): <input type="number" name="first_floor_water"><br>
+    Location Notes: <textarea rows="4" cols="50" name="location_notes"></textarea><br>
+    <h3>Type of Applicant</h3>
+      <input type="radio" name="hometype" value="renter">Renter<br>
+      <input type="radio" name="hometype" value="homeowner">Homeowner<br>
+      Other: <input type="text" name="tasother"><br>
+    <h3>Primary Home?</h3>
+      <input type="radio" name="primary_home?" value="yes">Yes<br>
+      <input type="radio" name="primary_home?" value="no">No<br>
+    <h3>Renter?</h3>
+      <input type="radio" name="renter?" value="yes">Yes<br>
+      <input type="radio" name="renter?" value="no">No<br>
+    <h3>Type of Structure</h3>
+      <input type="radio" name="structure_type" value="single">Single Family<br>
+      <input type="radio" name="structure_type" value="multiple">Multiple Family<br>
+      <input type="radio" name="structure_type" value="buisness">Buisness<br>
+      <input type="radio" name="structure_type" value="nonprofit">Nonprofit<br>
+    <h3>Flood Insurance?</h3>
+      <input type="radio" name="flood_insurance?" value="yes">Yes<br>
+      <input type="radio" name="flood_insurance?" value="no">No<br>
+    <h3>Market Value of Property</h3>
+      <h4 class="tabbed">Structure</h4>
+      <input class ="tabbed" type="number" name="structure_mv">
+      <h4 class="tabbed">Contents</h4>
+      <input class ="tabbed" type="number" name="contents_mv">
+      <h4 class="tabbed">Land And Improvements</h4>
+      <input class ="tabbed" type="number" name="land_mv">
+    <h3>Estimated Disaster Loss in Dollars</h3>
+      <h4 class="tabbed">Structure</h4>
+      <input class ="tabbed" type="number" name="structure_dl">
+      <h4 class="tabbed">Contents</h4>
+      <input class ="tabbed" type="number" name="contents_dl">
+      <h4 class="tabbed">Land And Improvements</h4>
+      <input class ="tabbed" type="number" name="land_dl">
+    <h3>Amount of Insurance</h3>
+      <h4 class="tabbed">Structure</h4>
+      <input class ="tabbed" type="number" name="structure_ai">
+      <h4 class="tabbed">Contents</h4>
+      <input class ="tabbed" type="number" name="contents_ai">
+      <h4 class="tabbed">Land And Improvements</h4>
+      <input class ="tabbed" type="number" name="land_ai">
+    <h3>Dollar Amount of Uninsured loss</h3>
+      <h4 class="tabbed">Structure</h4>
+      <input class ="tabbed" type="number" name="structure_ul">
+      <h4 class="tabbed">Contents</h4>
+      <input class ="tabbed" type="number" name="contents_ul">
+      <h4 class="tabbed">Land And Improvements</h4>
+      <input class ="tabbed" type="number" name="land_ul">
+      <h4 class="tabbed">Total</h4>
+      <input class="tabbed" type=number name="total_ul">
+    <h3>Percent of Uninsured Loss</h3>
+    <h4 class="tabbed">structure %uninsuredloss</h4>
+    <h4 class="tabbed">contents %uninsuredloss</h4>
+    <h4 class="tabbed">land and inprovements %uninsuredloss</h4>
+<table class="tg">
+  <tr>
+    <th class="tg-baqh">System</th>
+    <th class="tg-baqh" colspan="2">Damaged</th>
+    <th class="tg-baqh" colspan="2">%R.C.</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"></td>
+    <td class="tg-baqh">Home</td>
+    <td class="tg-baqh">Mobile <br>Home</td>
+    <td class="tg-baqh">Home</td>
+    <td class="tg-baqh">Mobile <br>Home</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Foundation</td>
+    <td class="tg-baqh"><input type="number" size="1" maxlength="1" min="0" max="7" name="foundation_home"></td>
+    <td class="tg-4luf"></td>
+    <td class="tg-baqh">7</td>
+    <td class="tg-4luf"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Floor(frame)</td>
+    <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="16" name="floor_frame_home"></td>
+    <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="20" name="floor_frame_mobile"></td>
+    <td class="tg-baqh">16</td>
+    <td class="tg-baqh">20</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Exterior Walls</td>
+    <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="14" name="exterior_walls_home"></td>
+    <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="35" name="exterior_walls_mobile"></td>
+    <td class="tg-baqh">14</td>
+    <td class="tg-baqh">35</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Roof</td>
+    <td class="tg-baqh"><input type="number" size="1" maxlength="1" min="0" max="9" name="roof_home"></td>
+    <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="20" name="roof_mobile"></td>
+    <td class="tg-baqh">9</td>
+    <td class="tg-baqh">20</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Interior Walls</td>
+    <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="28" name="interior_walls_home"></td>
+    <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="25" name="interior_walls_mobile"></td>
+    <td class="tg-baqh">28</td>
+    <td class="tg-baqh">25</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Plumbing</td>
+    <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="10" name="plumbing_home"></td>
+    <td class="tg-4luf"></td>
+    <td class="tg-baqh">10</td>
+    <td class="tg-4luf"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Heating/A.C.</td>
+    <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="10" name="heating_ac_home"></td>
+    <td class="tg-4luf"></td>
+    <td class="tg-baqh">10</td>
+    <td class="tg-4luf"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Electrical</td>
+    <td class="tg-baqh"><input type="number" size="1" maxlength="1" min="0" max="6" name= "electrical_home"></td>
+    <td class="tg-4luf"></td>
+    <td class="tg-baqh">6</td>
+    <td class="tg-4luf"></td>
+  </tr>
+  <tr>
+    <td>Total % Damaged</td>
+    <td colspan="2">
+    <td colspan="2">
+  </tr>
+  </table><br>
+  <table class="tg">
+    <tr>
+      <th class="tg-s6z2" colspan="3">Damage Category</th>
+    </tr>
+    <tr>
+      <td class="tg-943m"></td>
+      <td class="tg-s6z2">Home</td>
+      <td class="tg-s6z2">Mobile<br>Home</td>
+    </tr>
+    <tr>
+      <td class="tg-s6z2">Destroyed</td>
+      <td class="tg-s6z2"><input type="number" size="2" maxlength="2" min="0" max="28" name="destroyed_home"</td>
+      <td class="tg-s6z2"><input type="number" size="2" maxlength="2" min="0" max="28" name="destroyed_mobile"</td>
+    </tr>
+    <tr>
+      <td class="tg-baqh">Major</td>
+      <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="28" name="major_home"</td>
+      <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="28" name="major_mobile"</td>
+    </tr>
+    <tr>
+      <td class="tg-baqh">Minor</td>
+      <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="28" name="minor_home"</td>
+      <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="28" name="minor_mobile"</td>
+    </tr>
+    <tr>
+      <td class="tg-baqh">Affected</td>
+      <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="28" name="affected_home"</td>
+      <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="28" name="affected_mobile"</td>
+    </tr>
+    <tr>
+      <td class="tg-baqh">Inaccessible</td>
+      <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="28" name="inaccessible_home"</td>
+      <td class="tg-baqh"><input type="number" size="2" maxlength="2" min="0" max="28" name="inaccessible_mobile"</td>
+    </tr>
+  </table><br>
+
+  <input type="submit">
+</form>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-4luf{background-color:#656565;text-align:center;vertical-align:top}
+.tg .tg-s6z2{text-align:center}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-943m{background-color:#656565;text-align:center}
+</style>
+<!-- ./wrapper -->
+<!-- REQUIRED JS SCRIPTS -->
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="js/app.min.js"></script>
+</body>
+</html>
